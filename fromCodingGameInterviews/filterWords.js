@@ -9,12 +9,17 @@ function filterWords(words, letters) {
   console.log(result)
 }
 
-function checkLetters(word, letters) {
-  for (let i = 0; i < letters.length; i++) {
-    if (word.includes(letters[i])) {
-      return true
+function checkLetters(word, arr) {
+  let match = 0
+  for (let j = 0; j < arr.length; j++) {
+    if (word.includes(arr[j])) {
+      match++
     }
   }
+  if (match > 0) {
+    return true
+  }
+  return false
 }
 
 filterWords(['the', 'dog', 'got', 'a', 'bone'], 'ae')
