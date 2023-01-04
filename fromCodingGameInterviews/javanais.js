@@ -1,3 +1,4 @@
+//  this is a typscript exercice, add type to make it work(takes a string, returns a string)
 function translate(text) {
   const vowel = ['a', 'e', 'i', 'o', 'u']
   let result = []
